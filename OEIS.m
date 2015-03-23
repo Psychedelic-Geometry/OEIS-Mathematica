@@ -17,9 +17,9 @@
     http://oeis.org/
 *)
 
-(* :Package Version: 2.01 *)
+(* :Package Version: 2.02 *)
 
-(* :Mathematica Version: 7.0.0 *)
+(* :Mathematica Version: 9.0.0.0 *)
 
 (* :Links:
 The OEIS Foundation Inc:            http://oeisf.org/
