@@ -1,25 +1,36 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>OEIS-Mathematica by Psychedelic-Geometry</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">OEIS-Mathematica</h1>
-      <h2 class="project-tagline">Multipurpose Package for using OEIS On-Line data into Mathematica</h2>
-      <a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica" class="btn">View on GitHub</a>
-      <a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">OEIS-Mathematica</h1>
+        <p class="header">Multipurpose Package for using OEIS On-Line data into Mathematica</p>
 
-    <section class="main-content">
-      <h1>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Psychedelic-Geometry">Psychedelic-Geometry</a></p>
+
+
+      </header>
+      <section>
+        <h1>
 <a id="mathematica-oeis-package" class="anchor" href="#mathematica-oeis-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mathematica OEIS Package</h1>
 
 <p>When you go on computing: if you are doing repetitive and boring things, is
@@ -32,36 +43,49 @@ in the same Mathematica Package and to share it on the internet.</p>
 information from OEIS in your archives: for citation in documents or blogs,
 for programming sequences, or for many other purposes.</p>
 
-<h2>
-<a id="licence--gnu-general-public-license-version-3-29-june-2007" class="anchor" href="#licence--gnu-general-public-license-version-3-29-june-2007" aria-hidden="true"><span class="octicon octicon-link"></span></a>Licence:  GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</h2>
+<ul>
+<li><p>Author: Enrique Pérez Herrero</p></li>
+<li><p>Date: 24/Nov/2015</p></li>
+<li><p>Project Pages: <a href="http://psychedelic-geometry.github.io/OEIS-Mathematica">http://psychedelic-geometry.github.io/OEIS-Mathematica</a></p></li>
+<li><p>Licence: GNU GENERAL PUBLIC LICENSE v3.0</p></li>
+<li><p>Blog: <a href="http://psychedelic-geometry.blogspot.com/">http://psychedelic-geometry.blogspot.com/</a></p></li>
+</ul>
 
 <h2>
 <a id="package-description" class="anchor" href="#package-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Package Description:</h2>
 
+<p><strong>Version</strong>:</p>
+
 <ul>
-<li><p><em>Version</em>:
-** V 1.0, 26 August 2010, Testing...
-** V 2.0, 28 November 2010, Old links are no longer valid.</p></li>
-<li><p><em>Changes</em>:
-** 29/Aug/2010 - Added <code>OEISbFile</code> function and exporting to HTML
-** 28/Nov/2010 - Code rebuilt due to changes in OEIS, old links are no longer 
-valid.
-** 04/Jun/2011 - Fixed Unicode LF, instead of Window's CRLF for bFiles.
-** 25/Jan/2015 - Repository created at GitHub</p></li>
-<li><p><em>Functions</em>:</p></li>
-<li><code>OEISTotalNumberOfSequences</code></li>
-<li><code>OEISValidateIDQ</code></li>
-<li><code>OEISImport</code></li>
-<li><code>OEISURL</code></li>
-<li><code>OEISFunction</code></li>
-<li><code>OEISExport</code></li>
-<li><code>OEISbFile</code></li>
+<li><p>V 1.0, 26 August 2010, Testing...</p></li>
+<li><p>V 2.0, 28 November 2010, Old links are no longer valid.</p></li>
+</ul>
+
+<p><strong>Changes</strong>:</p>
+
+<ul>
+<li><p>29/Aug/2010 - Added <code>OEISbFile</code> function and exporting to HTML</p></li>
+<li><p>28/Nov/2010 - Code rebuilt due to changes in OEIS, old links are no longer valid.</p></li>
+<li><p>04/Jun/2011 - Fixed Unicode LF, instead of Window's CRLF for bFiles.</p></li>
+<li><p>25/Jan/2015 - Repository created at GitHub</p></li>
+</ul>
+
+<p><strong>Functions</strong></p>
+
+<ul>
+<li><p><code>OEISTotalNumberOfSequences</code></p></li>
+<li><p><code>OEISValidateIDQ</code></p></li>
+<li><p><code>OEISImport</code></p></li>
+<li><p><code>OEISURL</code></p></li>
+<li><p><code>OEISFunction</code></p></li>
+<li><p><code>OEISExport</code></p></li>
+<li><p><code>OEISbFile</code></p></li>
 </ul>
 
 <h2>
 <a id="download-and-install-oeism" class="anchor" href="#download-and-install-oeism" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download and Install OEIS.m</h2>
 
-<p>[<a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/blob/master/OEIS.m">https://github.com/Psychedelic-Geometry/OEIS-Mathematica/blob/master/OEIS.m</a>]</p>
+<p><a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/archive/master.zip">https://github.com/Psychedelic-Geometry/OEIS-Mathematica/archive/master.zip</a></p>
 
 <ul>
 <li>Loading Package into a Mathematica notebook:</li>
@@ -108,7 +132,7 @@ valid.
 </code></pre>
 
 <h4>
-<a id="importing-image" class="anchor" href="#importing-image" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Image:=</h4>
+<a id="importing-image" class="anchor" href="#importing-image" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Image:</h4>
 
 <pre><code> In[5]:= OEISImport["A030337","Image"]
  Out[5]=
@@ -138,30 +162,40 @@ valid.
 <li>Exporting Formats:</li>
 </ul>
 
-<p>{| class="wikitable" border="1" cellpadding="5"  cellspacing="10" style="border-collapse: collapse; border: 1px solid darkgray; color: black; empty-cells: show; text-align: left;"
-|+ align="bottom" style="color:#e76700;" |'' OEIS.m exporting formats''
-|- style="background:#00FF00;" 
-!File Extension
-!Exported data:
-|-
-|<em>.gp
-|Code to add help for PARI/GP functions
-|-
-|</em>.m
-|Code to add help for Mathematica 
-|-
-|<em>.txt, *.xls, *.csv, *.tsv, *.dat
-|Data files with sequence values.
-|-
-|</em>.jpg, <em>.jpeg, *.jp2, *.j2k, *.bmp, *.pgn, *.gif, *.tiff, *.tif
-|Image plot
-|-
-|</em>.bib
-|BibTeX citation to OEIS Sequences
-|-
-|*.htm, *.html
-|HTML citation to OEIS Sequences
-|}</p>
+<table>
+<thead>
+<tr>
+<th>File Extension</th>
+<th>Exported data:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*.gp</td>
+<td>Code to add help for PARI/GP functions</td>
+</tr>
+<tr>
+<td>*.m</td>
+<td>Code to add help for Mathematica</td>
+</tr>
+<tr>
+<td>*.txt, *.xls, *.csv, *.tsv, *.dat</td>
+<td>Data files with sequence values.</td>
+</tr>
+<tr>
+<td>*.jpg, *.jpeg, *.jp2, *.j2k, *.bmp, *.pgn, *.gif, *.tiff, *.tif</td>
+<td>Image plot</td>
+</tr>
+<tr>
+<td>*.bib</td>
+<td>BibTeX citation to OEIS Sequences</td>
+</tr>
+<tr>
+<td>*.htm, *.html</td>
+<td>HTML citation to OEIS Sequences</td>
+</tr>
+</tbody>
+</table>
 
 <h4>
 <a id="exporting-bibtex-citation" class="anchor" href="#exporting-bibtex-citation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting BibTeX citation:</h4>
@@ -172,7 +206,10 @@ valid.
  Out[1]=example.bib
 </code></pre>
 
-<p>Content of file: <code>example.bib</code></p>
+<ul>
+<li>Content of file: <code>example.bib</code>
+</li>
+</ul>
 
 <pre><code> @MISC{oeisA026588,
  AUTHOR={},
@@ -217,89 +254,110 @@ valid.
  Out[3]= code_for_Mathematica.m
 </code></pre>
 
-<p>*Content of file: <code>code_for_Mathematica.m</code></p>
+<ul>
+<li>Content of file: <code>code_for_Mathematica.m</code>
+</li>
+</ul>
 
-<p>A026588::usage="A026588[n]: Duplicate of A026572.";
+<pre><code> A026588::usage="A026588[n]: Duplicate of A026572.";
  A111084::usage="A111084[n]: Where records occur in A111267.";
- A131473::usage="A131473[n]: a(n)=n^6-n.";</p>
+ A131473::usage="A131473[n]: a(n)=n^6-n.";
+</code></pre>
 
-<p>==== Exporting all available data ====</p>
+<h4>
+<a id="exporting-all-available-data" class="anchor" href="#exporting-all-available-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting all available data</h4>
 
 <ul>
-<li>
-<p>Example with EXCEL:</p>
+<li>Example with EXCEL:</li>
+</ul>
 
-<p>In[4]:= OEISExport[{"A026588","A111084","A131473"},"data.xls"]
-Out[4]= {A026588_data.xls,A111084_data.xls,A131473_data.xls}</p>
+<pre><code> In[4]:= OEISExport[{"A026588","A111084","A131473"},"data.xls"]
+ Out[4]= {A026588_data.xls,A111084_data.xls,A131473_data.xls}
+</code></pre>
+
+<h4>
+<a id="exporting-citation-to-html-code" class="anchor" href="#exporting-citation-to-html-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting citation to HTML code</h4>
+
+<pre><code> In[5]:=OEISExport[{"A040414", "A050414", "A002323", "A026588"}, "test.html"]
+ Out[5]= test.html
+</code></pre>
+
+<ul>
+<li>Content of file: <code>test.html</code>
 </li>
 </ul>
 
-<p>==== Exporting citation to HTML code ====</p>
+<pre><code> &lt;a name="oeisA040414"&gt;[1]-&lt;/a&gt; N. J. A. Sloane, The On-Line Encyclopedia of Integer Sequences. 
+ &lt;a href=http://oeis.org/A040414"&gt;A040414&lt;/a&gt;: Continued fraction for sqrt(435).&lt;br/&gt;
 
-<p>In[5]:=OEISExport[{"A040414", "A050414", "A002323", "A026588"}, "test.html"]
- Out[5]= test.html</p>
+ &lt;a name="oeisA050414"&gt;[2]-&lt;/a&gt; Jud McCranie, The On-Line Encyclopedia of Integer Sequences.
+ &lt;a href=http://oeis.org/A050414"&gt;A050414&lt;/a&gt;: Numbers n such that 2^n - 3 is prime.&lt;br/&gt;
 
-<p>*Content of file: '''test.html'''</p>
+ &lt;a name="oeisA002323"&gt;[3]-&lt;/a&gt; N. J. A. Sloane, The On-Line Encyclopedia of Integer Sequences.
+ &lt;a href=http://oeis.org/A002323"&gt;A002323&lt;/a&gt;: Fermat remainders.&lt;br/&gt;
 
-<p><a name="oeisA040414">[1]-</a> N. J. A. Sloane, The On-Line Encyclopedia of Integer Sequences. 
- <a href="http://oeis.org/A040414%22">A040414</a>: Continued fraction for sqrt(435).<br></p>
+ &lt;a name="oeisA026588"&gt;[4]-&lt;/a&gt; The On-Line Encyclopedia of Integer Sequences.
+ &lt;a href=http://oeis.org/A026588"&gt;A026588&lt;/a&gt;:  Duplicate of A026572.&lt;br/&gt;
+</code></pre>
 
-<p><a name="oeisA050414">[2]-</a> Jud McCranie, The On-Line Encyclopedia of Integer Sequences.
- <a href="http://oeis.org/A050414%22">A050414</a>: Numbers n such that 2^n - 3 is prime.<br></p>
+<h4>
+<a id="exporting-citation-to-wiki-code" class="anchor" href="#exporting-citation-to-wiki-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting citation to Wiki code</h4>
 
-<p><a name="oeisA002323">[3]-</a> N. J. A. Sloane, The On-Line Encyclopedia of Integer Sequences.
- <a href="http://oeis.org/A002323%22">A002323</a>: Fermat remainders.<br></p>
-
-<p><a name="oeisA026588">[4]-</a> The On-Line Encyclopedia of Integer Sequences.
- <a href="http://oeis.org/A026588%22">A026588</a>:  Duplicate of A026572.<br></p>
-
-<p>==== Exporting citation to Wiki code ====</p>
-
-<p>In[6]:=OEISExport[{"A026518", "A111284"}, "example.wiki"]
- Out[6]:=example.wiki</p>
+<pre><code> In[6]:=OEISExport[{"A026518", "A111284"}, "example.wiki"]
+ Out[6]:=example.wiki
+</code></pre>
 
 <ul>
-<li>
-<p>Content of file: '''example.wiki'''</p>
-
-<ul>
-<li>A026518: a(n) = length of n-th run of identical symbols in A026517.</li>
-<li>A111284: Number of permutations avoiding the patterns {2143,2341,2413,2431,3142,3241,3412,3421,4123,4213,4231,4321,4132,4312};
-number of strong sorting class based on 2143.</li>
-</ul>
+<li>Content of file: <code>example.wiki</code>
 </li>
 </ul>
 
-<p>===  FUNCTIONS CREATED AUTOMATICALLY:  Function: '''OEISFunction[ID,Opts]:'''===</p>
+<pre><code> A026518: a(n) = length of n-th run of identical symbols in A026517.
+ A111284: Number of permutations avoiding the patterns {2143,2341,2413,2431,3142,3241,3412,3421,4123,4213,4231,4321,4132,4312};
+ number of strong sorting class based on 2143.
+</code></pre>
 
-<p>The options Opts, are all of them True by default, and they can be modified as:</p>
+<h3>
+<a id="functions-created-automatically" class="anchor" href="#functions-created-automatically" aria-hidden="true"><span class="octicon octicon-link"></span></a>FUNCTIONS CREATED AUTOMATICALLY:</h3>
 
-<p>To skip the addition of help to the function:
- OEISFunction[ID,AddHelp-&gt;False]</p>
+<p>Function: <code>OEISFunction[ID, Opts]</code>:</p>
 
-<p>To skip the data from the bFile:
- OEISFunction[ID,bFile-&gt;False]</p>
+<p>The options <code>Opts</code>, are <code>True</code> by default, and they can be modified as:</p>
 
-<p>To do not print on the screen the information outputed:
- <code>OEISFunction[ID,Output-&gt;False]</code></p>
+<p>To skip the addition of help to the function:</p>
 
-<p>*Example of use:</p>
+<p><code>OEISFunction[ID,AddHelp-&gt;False]</code></p>
 
-<p>In[5]:= OEISFunction["A094358"]
+<p>To skip the data from the bFile:</p>
+
+<p><code>OEISFunction[ID,bFile-&gt;False]</code></p>
+
+<p>To do not print on the screen the information outputed:</p>
+
+<p><code>OEISFunction[ID,Output-&gt;False]</code></p>
+
+<ul>
+<li>Example of use:</li>
+</ul>
+
+<pre><code> In[5]:= OEISFunction["A094358"]
  A094358(n): Squarefree products of factors of Fermat numbers (A023394).
- Link-1: <a href="http://oeis.org/A094358">http://oeis.org/A094358</a>
- Link-2: <a href="http://oeis.org/b094358.txt">http://oeis.org/b094358.txt</a>
+ Link-1: http://oeis.org/A094358
+ Link-2: http://oeis.org/b094358.txt
  Help Added: True
  Loaded data from bFile: True
  Loaded data from Sequence: False
- Data available: Table of n, A094358(n) for n=1..1314</p>
+ Data available: Table of n, A094358(n) for n=1..1314
+</code></pre>
 
 <p>From now on, we can use the function with all data already loaded on it:</p>
 
-<p>In[6]:= A094358[1314] 
- Out[6]= 2917004348489729</p>
+<pre><code> In[6]:= A094358[1314] 
+ Out[6]= 2917004348489729
+</code></pre>
 
-<p>===  GENERATING b-Files: ===</p>
+<h3>
+<a id="generating-b-files" class="anchor" href="#generating-b-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>GENERATING b-Files:</h3>
 
 <p>Function: <code>OEISbFile[ID,Vmax,filename]</code></p>
 
@@ -307,31 +365,31 @@ number of strong sorting class based on 2143.</li>
 <li>Example:</li>
 </ul>
 
-<p>We can define the function first, but if we do not define it, the code creates the function and preloads all available data from OEIS:</p>
+<p>We can define the function first, but if we do not define it, the code creates
+the function and preloads all available data from OEIS:</p>
 
-<p>In[5]:=A040414[0]:=20;
-        A040414[n_]:=Part[{1,5,1,40},1+Mod[n-1,4}};</p>
+<pre><code> In[5]:=A040414[0]:=20;
+        A040414[n_]:=Part[{1,5,1,40},1+Mod[n-1,4}};
+ In[6]:=OEISbFile["A040414", 200]
+ Out[6]=b040414.txt
+</code></pre>
 
-<p>In[6]:=OEISbFile["A040414", 200]
- Out[6]=b040414.txt</p>
-
-<p>===  Links: ===</p>
+<h3>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links:</h3>
 
 <ul>
-<li>Todd Gayley, 1994 Mathematica Developer Conference, Wolfram Research, Inc., Tutorial: [<a href="http://library.wolfram.com/infocenter/Conferences/184/">http://library.wolfram.com/infocenter/Conferences/184/</a> Mathematica Package Design]</li>
-<li>[<a href="http://oeis.org/wiki/Sequence_Tools">http://oeis.org/wiki/Sequence_Tools</a> OEIS Sequence Tools]</li>
-<li>GitHub Repository: [<a href="https://github.com/Psychedelic-Geometry">https://github.com/Psychedelic-Geometry</a> OEIS-Mathematica]</li>
+<li>Todd Gayley, <a href="http://library.wolfram.com/infocenter/Conferences/184/%20Mathematica%20Package%20Design">1994 Mathematica Developer Conference, Wolfram Research, Inc., Tutorial</a>
+</li>
+<li><a href="http://oeis.org/wiki/Sequence_Tools">OEIS Sequence Tools</a></li>
+<li><a href="https://github.com/Psychedelic-Geometry%20OEIS-Mathematica">GitHub Repository</a></li>
 </ul>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica">OEIS-Mathematica</a> is maintained by <a href="https://github.com/Psychedelic-Geometry">Psychedelic-Geometry</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
-
-    </section>
-
-            <script type="text/javascript">
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
