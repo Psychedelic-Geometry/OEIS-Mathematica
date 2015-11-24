@@ -1,25 +1,34 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>OEIS-mathematica by Psychedelic-Geometry</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">OEIS-mathematica</h1>
-      <h2 class="project-tagline">Multipurpose Package for using OEIS On-Line data into Mathematica</h2>
-      <a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica" class="btn">View on GitHub</a>
-      <a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
-
-    <section class="main-content">
-      <p>= Mathematica OEIS Package =</p>
+    <div class="wrapper">
+      <header>
+        <h1>OEIS-mathematica</h1>
+        <p>Multipurpose Package for using OEIS On-Line data into Mathematica</p>
+        <p class="view"><a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica">View the Project on GitHub <small>Psychedelic-Geometry/OEIS-Mathematica</small></a></p>
+        <ul>
+          <li><a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="mathematica-oeis-package" class="anchor" href="#mathematica-oeis-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mathematica OEIS Package</h1>
 
 <p>When you go on computing: if you are doing repetitive and boring things, is
 because you are not working in a proper way. So I decided to write some code to
@@ -67,50 +76,60 @@ valid.
 </li>
 </ul>
 
-<p>== PROGRAMMING EXAMPLES ==</p>
+<h2>
+<a id="programming-examples-" class="anchor" href="#programming-examples-" aria-hidden="true"><span class="octicon octicon-link"></span></a>PROGRAMMING EXAMPLES ==</h2>
 
-<p>=== IMPORTING DATA FROM OEIS: ===</p>
+<h3>
+<a id="importing-data-from-oeis" class="anchor" href="#importing-data-from-oeis" aria-hidden="true"><span class="octicon octicon-link"></span></a>IMPORTING DATA FROM OEIS:</h3>
 
-<p>==== Importing Sequence Description: ====</p>
+<h4>
+<a id="importing-sequence-description" class="anchor" href="#importing-sequence-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Sequence Description:</h4>
 
 <p>In[1]:= OEISImport["A014321","Description"]
  Out[1]= The next new gap between successive odd primes (divided by 2).</p>
 
-<p>==== Importing Sequence Data: ====</p>
+<h4>
+<a id="importing-sequence-data-" class="anchor" href="#importing-sequence-data-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Sequence Data: ====</h4>
 
 <p>In[2]:= OEISImport["A080321","Data"]
  Out[2]= {{0,0},{1,4},{2,428},{3,58747},{4,1758473969},{5,340760636747},{6,14410746502617904},{7,673020037180959760871},
  {8,1736622037158911219053381734718},{9,400539731185759177060380684246324}}</p>
 
-<p>==== Importing Sequence creation date:====</p>
+<h4>
+<a id="importing-sequence-creation-date" class="anchor" href="#importing-sequence-creation-date" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Sequence creation date:====</h4>
 
 <p>In[3]:= OEISImport["A117321","Date"]
  Out[3]= {Mar,07,2006}</p>
 
-<p>==== Importing Sequence Author:====</p>
+<h4>
+<a id="importing-sequence-author" class="anchor" href="#importing-sequence-author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Sequence Author:====</h4>
 
 <p>In[4]:= OEISImport["A014321","Author"]
  Out[4]= {Hynek Mlcousek}</p>
 
-<p>==== Importing Image:====</p>
+<h4>
+<a id="importing-image" class="anchor" href="#importing-image" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Image:====</h4>
 
 <p>In[5]:= OEISImport["A030337","Image"]
  Out[5]=
 [[File:Sample for A030337-Image sample.gif|border|200px]]</p>
 
-<p>==== Importing bFile:====</p>
+<h4>
+<a id="importing-bfile" class="anchor" href="#importing-bfile" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing bFile:====</h4>
 
 <p>In[6]:=ListPlot[OEISImport["A094358","bFile"],Joined-&gt;True]
  Out[6]= (Plot Image)</p>
 
-<p>==== Importing Range of Available data:====</p>
+<h4>
+<a id="importing-range-of-available-data" class="anchor" href="#importing-range-of-available-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Importing Range of Available data:====</h4>
 
 <p>In[7]:= OEISImport["A094358","MinData"]
  Out[7]= 1
  In[8]:= OEISImport["A094358","MaxData"]
  Out[8]= 1314</p>
 
-<p>=== EXPORTING DATA FROM OEIS: ===</p>
+<h4>
+<a id="exporting-data-from-oeis-" class="anchor" href="#exporting-data-from-oeis-" aria-hidden="true"><span class="octicon octicon-link"></span></a>EXPORTING DATA FROM OEIS: ===</h4>
 
 <ul>
 <li>Exporting Formats:</li>
@@ -141,7 +160,8 @@ valid.
 |HTML citation to OEIS Sequences
 |}</p>
 
-<p>==== Exporting BibTeX citation: ====</p>
+<h4>
+<a id="exporting-bibtex-citation-" class="anchor" href="#exporting-bibtex-citation-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting BibTeX citation: ====</h4>
 
 <p>The input for the function can be a String or a List of Strings:</p>
 
@@ -168,7 +188,8 @@ valid.
  NOTE={Where records occur in A111267.}
  }</p>
 
-<p>==== Exporting Help Code for PARI/GP: ====</p>
+<h4>
+<a id="exporting-help-code-for-parigp-" class="anchor" href="#exporting-help-code-for-parigp-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting Help Code for PARI/GP: ====</h4>
 
 <p>In[2]:= OEISExport[{"A026588","A111084","A131473"},"code_for_PARIGP.gp"]
  Out[2]= code_for_PARIGP.gp</p>
@@ -179,7 +200,8 @@ valid.
  addhelp(A111084,"A111084: Where records occur in A111267.");
  addhelp(A131473,"A131473: a(n)=n^6-n.");</p>
 
-<p>==== Exporting Help Code for Mathematica:====</p>
+<h4>
+<a id="exporting-help-code-for-mathematica" class="anchor" href="#exporting-help-code-for-mathematica" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting Help Code for Mathematica:====</h4>
 
 <p>In[3]:= OEISExport[{"A026588","A111084","A131473"},"code_for_Mathematica.m"]
  Out[3]= code_for_Mathematica.m</p>
@@ -190,7 +212,8 @@ valid.
  A111084::usage="A111084[n]: Where records occur in A111267.";
  A131473::usage="A131473[n]: a(n)=n^6-n.";</p>
 
-<p>==== Exporting all available data ====</p>
+<h4>
+<a id="exporting-all-available-data-" class="anchor" href="#exporting-all-available-data-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting all available data ====</h4>
 
 <ul>
 <li>
@@ -201,7 +224,8 @@ Out[4]= {A026588_data.xls,A111084_data.xls,A131473_data.xls}</p>
 </li>
 </ul>
 
-<p>==== Exporting citation to HTML code ====</p>
+<h4>
+<a id="exporting-citation-to-html-code-" class="anchor" href="#exporting-citation-to-html-code-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting citation to HTML code ====</h4>
 
 <p>In[5]:=OEISExport[{"A040414", "A050414", "A002323", "A026588"}, "test.html"]
  Out[5]= test.html</p>
@@ -220,7 +244,8 @@ Out[4]= {A026588_data.xls,A111084_data.xls,A131473_data.xls}</p>
 <p><a name="oeisA026588">[4]-</a> The On-Line Encyclopedia of Integer Sequences.
  <a href="http://oeis.org/A026588%22">A026588</a>:  Duplicate of A026572.<br></p>
 
-<p>==== Exporting citation to Wiki code ====</p>
+<h4>
+<a id="exporting-citation-to-wiki-code-" class="anchor" href="#exporting-citation-to-wiki-code-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exporting citation to Wiki code ====</h4>
 
 <p>In[6]:=OEISExport[{"A026518", "A111284"}, "example.wiki"]
  Out[6]:=example.wiki</p>
@@ -237,7 +262,8 @@ number of strong sorting class based on 2143.</li>
 </li>
 </ul>
 
-<p>===  FUNCTIONS CREATED AUTOMATICALLY:  Function: '''OEISFunction[ID,Opts]:'''===</p>
+<h3>
+<a id="functions-created-automatically--function-oeisfunctionidopts" class="anchor" href="#functions-created-automatically--function-oeisfunctionidopts" aria-hidden="true"><span class="octicon octicon-link"></span></a>FUNCTIONS CREATED AUTOMATICALLY:  Function: '''OEISFunction[ID,Opts]:'''===</h3>
 
 <p>The options Opts, are all of them True by default, and they can be modified as:</p>
 
@@ -266,7 +292,8 @@ number of strong sorting class based on 2143.</li>
 <p>In[6]:= A094358[1314] 
  Out[6]= 2917004348489729</p>
 
-<p>===  GENERATING b-Files: ===</p>
+<h3>
+<a id="generating-b-files-" class="anchor" href="#generating-b-files-" aria-hidden="true"><span class="octicon octicon-link"></span></a>GENERATING b-Files: ===</h3>
 
 <p>Function: <code>OEISbFile[ID,Vmax,filename]</code></p>
 
@@ -282,23 +309,22 @@ number of strong sorting class based on 2143.</li>
 <p>In[6]:=OEISbFile["A040414", 200]
  Out[6]=b040414.txt</p>
 
-<p>===  Links: ===</p>
+<h3>
+<a id="links-" class="anchor" href="#links-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links: ===</h3>
 
 <ul>
 <li>Todd Gayley, 1994 Mathematica Developer Conference, Wolfram Research, Inc., Tutorial: [<a href="http://library.wolfram.com/infocenter/Conferences/184/">http://library.wolfram.com/infocenter/Conferences/184/</a> Mathematica Package Design]</li>
 <li>[<a href="http://oeis.org/wiki/Sequence_Tools">http://oeis.org/wiki/Sequence_Tools</a> OEIS Sequence Tools]</li>
 <li>GitHub Repository: [<a href="https://github.com/Psychedelic-Geometry">https://github.com/Psychedelic-Geometry</a> OEIS-Mathematica]</li>
 </ul>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Psychedelic-Geometry/OEIS-Mathematica">OEIS-mathematica</a> is maintained by <a href="https://github.com/Psychedelic-Geometry">Psychedelic-Geometry</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-            <script type="text/javascript">
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/Psychedelic-Geometry">Psychedelic-Geometry</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
