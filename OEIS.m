@@ -38,7 +38,23 @@ OEIS Page:                          http://oeis.org/wiki/User:Enrique_P\[EAcute]
 *)
 
 (* :Licence:
-Creative Commons Attribution-Noncommercial-Share Alike 3.0 License.
+    OEIS.m:  Wolfram Mathematica Package for working with OEIS data.
+    Copyright (C) 2015  Enrique P\[EAcute]rez Herrero
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+	Contact: psychgeometry@gmail.com
 *)
 
 (* :Limitations:  *)
@@ -132,7 +148,7 @@ OEISServerURL="http://oeis.org/";
 Options[OEISTotalNumberOfSequences]={URL->True};
 
 OEISTotalNumberOfSequences[OptionsPattern[OEISTotalNumberOfSequences]]:=OEISTotalNumberOfSequences[OptionsPattern[OEISTotalNumberOfSequences]]=
-	Module[{dataloaded,first,last, defaultvalue=178477,urlQ},
+	Module[{dataloaded,first,last, defaultvalue=20000,urlQ},
 		dataloaded=Quiet[Import[OEISServerURL,"Plaintext"]];
 		urlQ=OptionValue[URL];
 		If[Head[Element[urlQ,Booleans]]===Symbol,
