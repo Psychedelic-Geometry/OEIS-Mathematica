@@ -1,17 +1,17 @@
-# Mathematica OEIS Package
+= Mathematica OEIS Package =
 
 When you go on computing: if you are doing repetitive and boring things, is
 because you are not working in a proper way. So I decided to write some code to
 help myself with the worst part of my projects. And as this code began to grow
-and became more complex, I thought it would be good idea to gather all together
-in the same _Mathematica Package_ and to share it on the internet.
+and became more complex, thought it would be good idea to gather all together
+in the same Mathematica Package and to share it on the internet.
 
 This code includes functions that can make your life easier if you a using the
 information from OEIS in your archives: for citation in documents or blogs,
 for programming sequences, or for many other purposes.
  
 
-== Package Description: ==
+## Package Description:
 
 * '''Version''':
 ** V 1.0, 26 August 2010, Testing...
@@ -20,7 +20,8 @@ for programming sequences, or for many other purposes.
 
 * '''Changes''':
 ** 29/Aug/2010 - Added OEISbFile function and exporting to HTML
-** 28/Nov/2010 - Code rebuilt due to changes in OEIS, old links are no longer valid.
+** 28/Nov/2010 - Code rebuilt due to changes in OEIS, old links are no longer 
+valid.
 ** 04/Jun/2011 - Fixed Unicode LF, instead of Window's CRLF for bFiles.
 ** 25/Jan/2015 - Repository created at GitHub
 
@@ -33,7 +34,7 @@ for programming sequences, or for many other purposes.
 **OEISExport
 **OEISbFile
 
-== Download and Install OEIS.m ==
+## Download and Install OEIS.m
 
 [https://github.com/Psychedelic-Geometry/OEIS-Mathematica/blob/master/OEIS.m]
 
